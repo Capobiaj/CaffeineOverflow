@@ -13,10 +13,10 @@ function HomePage() {
                     <input type="text" value={country} onChange={e => setCountry(e.target.value)}/>
                 </label>
             </form>
-            <div id="homePageLinks">
+            <div className="Links">
                 <Link to={{pathname: `/info/${country}`}}>Information</Link><br/>
                 <Link to={{pathname: `/currency/${country}`}}>Currency</Link><br/>
-                <Link to="/images">Images</Link>
+                <Link to={{pathname: `/images/${country}`}}>Images</Link>
             </div>
         </>
     )

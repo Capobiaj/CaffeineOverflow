@@ -13,6 +13,18 @@
   color: white;
 }
 
+.App-header button {
+  display: inline-block;
+  border: 2px solid white;
+  font-family:Georgia;
+}
+
+.App-header img {
+  max-width: 600px;
+  max-height: 600px;
+  border: 5px dashed white;
+}
+
 .App-header h1 {
   font-family: Georgia;
 }
@@ -29,13 +41,28 @@
   font-family: Georgia;
 }
 
+.App-header ul {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.4em;
+  font-family: Georgia;
+  min-width: 400px;
+  box-shadow: 0 0 20px black;
+}
+
+.App-header li {
+  background-color: darkslateblue;
+  color: ivory;
+  text-align: center;
+}
+
 .App-header form {
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 1.4em;
   font-family: Georgia;
   min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px black;
 }
 .App-header table {
   border-collapse: collapse;
@@ -43,7 +70,7 @@
   font-size: 1.4em;
   font-family: Georgia;
   min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px black;
 }
 
 .App-header thead tr {
@@ -64,7 +91,13 @@
   background-color:lightseagreen;
 }
 
-.App-link {
-  color: #61dafb;
+.Links {
+  display: inline-block;
+  border: 0.1em solid darkslateblue;
+  border-radius: 1px;
+  box-sizing: border-box;
+  font-family: Georgia;
+  padding: 5px;
+  
 }
 

@@ -57,15 +57,17 @@ function CountryInfoPage() {
             </div>
             <div>
                 <h3>Wikipedia Page analytics on {country}</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Most common words</th>
-                        </tr>
-                    </thead>
-                </table>
+                <ul>
+                    <li>multicultural</li>
+                    <li>provinces</li>
+                    <li>education</li>
+                    <li>healthcare</li>
+                    <li>developed</li>
+                    <li>french</li>
+                    <li>british</li>
+                </ul>
             </div>
-            <div id="Links">
+            <div className="Links">
                 <Link to="/">Homepage</Link><br/>
             </div>
         </>

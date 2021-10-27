@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import CountryInfoPage from './pages/CountryInfoPage';
 import CountryCurrencyPage from './pages/CountryCurrencyPage';
-//import countryImagePage from './pages/countryImagePage';
+import CountryImagePage from './pages/CountryImagePage';
 
 //** */
 function App() {
@@ -20,6 +20,9 @@ function App() {
           </Route>
           <Route path="/currency/:country">
             <CountryCurrencyPage/>
+          </Route>
+          <Route path="/images/:country">
+            <CountryImagePage/>
           </Route>
         </div>
       </Router>
