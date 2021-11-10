@@ -8,7 +8,19 @@ const app = express();
 /**
  * Fetches api and gets results for the name parameter in the
  * get request. If there is an exact match, it will identify it
- * and run analytics on it.
+ * and return a JSON response.
+ * 
+ * JSON RESPONSE:
+ * pagetitle: NAME OF PAGE
+ * relevantpages: ALL PAGES WITH SAME NAME IN TITLE
+ * images: ALL IMAGES LISTED ON PAGE (How to view? - URL = https://wikitravel.org/en/File:{IMAGE NAME})
+ * externallinks: ALL EXTERNAL LINKS LISTED ON PAGE 
+ * internallinks: ALL INTERNAL LINKS LISTED ON PAGE (How to link? - URL = https://wikitravel.org/en/{LINK} (SPACES = _) )
+ * summaryHTML: INTRODUCTION SECTION OF PAGE (~ 1 Paragraph) in HTML
+ * summaryText: INTRODUCTION SECTION OF PAGE (~ 1 Paragraph) in plain text
+ * understandHTML: UNDERSTAND SECTION OF PAGE (if it exists) (Multiple paragraphs) in HTML
+ * understandText: UNDERSTAND SECTION OF PAGE (if it exists) (Multiple paragraphs) in plain text
+ * 
  */
 app.get('/wikiscrape/:name', async function(req, res) {
     let page = req.params.name
