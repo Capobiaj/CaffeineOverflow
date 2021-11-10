@@ -111,6 +111,7 @@ app.get('/wikiscrape/:name', async function(req, res) {
             data['page'] = 'Unable to find exact page - consider inputting one of the relevant pages instead'
             data['totalhits'] = response1data.query.searchinfo.totalhits
             data['relevantpages'] = relevantPages
+            res.status(404)
             res.send(data)
         }
     } catch (error) {

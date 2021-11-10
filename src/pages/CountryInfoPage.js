@@ -26,6 +26,19 @@ function CountryInfoPage() {
                     <td>38,246,108</td>
                 </tbody>
             </table>
+            <div>
+                <h3>Most Common Words on {country}'s Wikipedia page:</h3>
+                <ul>
+                    <li>multicultural</li>
+                    <li>provinces</li>
+                    <li>education</li>
+                    <li>healthcare</li>
+                    <li>developed</li>
+                    <li>french</li>
+                    <li>british</li>
+                </ul>
+            </div>
+
             <h3>Wikipedia summary of Canada</h3>
             <div id="wiki-summary">
                 <p>
@@ -55,18 +68,7 @@ function CountryInfoPage() {
                 Cooperation forum, and the Organization of American States.
                 </p>
             </div>
-            <div>
-                <h3>Wikipedia Page analytics on {country}</h3>
-                <ul>
-                    <li>multicultural</li>
-                    <li>provinces</li>
-                    <li>education</li>
-                    <li>healthcare</li>
-                    <li>developed</li>
-                    <li>french</li>
-                    <li>british</li>
-                </ul>
-            </div>
+    
             <div className="Links">
                 <Link to="/">Homepage</Link><br/>
             </div>

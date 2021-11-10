@@ -6,8 +6,7 @@ function HomePage() {
     
     return (
         <>
-            <h1>Geography App</h1>
-            <p>Welcome to my application for CS 361!</p>
+            <h1>Geography For You</h1>
             <form>
                 <label> Enter a country: 
                     <input type="text" value={country} onChange={e => setCountry(e.target.value)}/>

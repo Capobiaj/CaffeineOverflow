@@ -15,7 +15,7 @@ function CountryCurrencyPage() {
                 <thead>
                     <th>CAD</th>
                     <th className="dropdown">
-                        <label for="currencies">Choose a car:</label>
+                        <label for="currencies">Choose a currency:</label>
                             <select id="currencies" name="currencies">
                                 <option value="USD">USD</option>
                                 <option value="GBP">GBP</option>
